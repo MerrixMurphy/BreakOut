@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#572c00"
+    tools:context=".puzzlelist.Puzzlelist5">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="15dp"
+        android:layout_height="0dp"
+        android:background="#7f7f7f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#572c00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:background="#442200"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="24dp"
+        android:background="#381d00"
+        app:layout_constraintBottom_toBottomOf="@+id/level22"
+        app:layout_constraintEnd_toStartOf="@+id/level22title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/level22" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:background="#381d00"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/level22title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#442200"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="453dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/level24title"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/doorknob" />
+
+    <TextView
+        android:id="@+id/swipe5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/level21"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="182dp"
+        android:onClick="leveltwentyone"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/level22"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/level22"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="182dp"
+        android:onClick="leveltwentytwo"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/level23"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/level23"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="182dp"
+        android:onClick="leveltwentythree"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/level24"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="182dp"
+        android:onClick="leveltwentyfour"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/level23"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/level25"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="182dp"
+        android:onClick="leveltwentyfive"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/level24"
+        app:srcCompat="@drawable/lock" />
+
+    <TextView
+        android:id="@+id/level21title"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Lock Twenty-One:"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/level21"
+        app:layout_constraintEnd_toStartOf="@+id/level21"
+        app:layout_constraintTop_toTopOf="@+id/level21" />
+
+    <TextView
+        android:id="@+id/level22title"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Lock Twenty-Two:"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/level22"
+        app:layout_constraintEnd_toStartOf="@+id/level22"
+        app:layout_constraintTop_toTopOf="@+id/level22" />
+
+    <TextView
+        android:id="@+id/level23title"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Lock Twenty-Three:"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/level23"
+        app:layout_constraintEnd_toStartOf="@+id/level23"
+        app:layout_constraintTop_toTopOf="@+id/level23" />
+
+    <TextView
+        android:id="@+id/level24title"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Lock Twenty-Four:"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/level24"
+        app:layout_constraintEnd_toStartOf="@+id/level24"
+        app:layout_constraintTop_toTopOf="@+id/level24" />
+
+    <TextView
+        android:id="@+id/level25title"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Lock Twenty-Five:"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/level25"
+        app:layout_constraintEnd_toStartOf="@+id/level25"
+        app:layout_constraintTop_toTopOf="@+id/level25"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/level21"
+        app:layout_constraintEnd_toEndOf="@+id/level21"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/level21"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/level22"
+        app:layout_constraintEnd_toEndOf="@+id/level22"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/level22"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/level23"
+        app:layout_constraintEnd_toEndOf="@+id/level23"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/level23"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/level24"
+        app:layout_constraintEnd_toEndOf="@+id/level24"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/level24"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/level25"
+        app:layout_constraintEnd_toEndOf="@+id/level25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/level25"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/list2down"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:rotation="180"
+        android:onClick="godown5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/white_up" />
+
+    <ImageView
+        android:id="@+id/list2up"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:onClick="goup5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_up" />
+
+    <TextView
+        android:id="@+id/vlist5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/many5"
+        android:layout_width="350dp"
+        android:layout_height="124dp"
+        android:gravity="center"
+        android:text="20/50 Locks Unlocked"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/level21title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

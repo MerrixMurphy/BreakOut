@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/door"
+        android:layout_width="221dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/door" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="166dp"
+        android:background="#572c00"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="136dp"
+        android:layout_height="88dp"
+        android:background="@drawable/border_24dp"
+        android:gravity="center"
+        android:text="PLAY"
+        android:onClick="Play"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/door"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="136dp"
+        android:layout_height="88dp"
+        android:background="@drawable/border_24dp"
+        android:gravity="center"
+        android:text="OPTIONS"
+        android:onClick="Options"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/door"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/floor"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/door"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <ImageView
+        android:id="@+id/lock1"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock2"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock1"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock3"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock2"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock4"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock3"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock5"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock4"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock6"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock5"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock7"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock6"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock8"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock7"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock9"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock8"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock10"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock9"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock11"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock10"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock12"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock11"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock13"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock12"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock14"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock13"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock15"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock14"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock16"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock15"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock17"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock16"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock18"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock17"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock19"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock18"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock20"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock19"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock21"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock20"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock22"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock21"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock23"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock22"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock24"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock23"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock25"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock24"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock26"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock25"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock27"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock26"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock28"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock27"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock29"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock28"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock30"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock29"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock31"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock30"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock32"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock31"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock33"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock32"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock34"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock33"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock35"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock34"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock36"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock35"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock37"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock36"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock38"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock37"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock39"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock38"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock40"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock39"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock41"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock40"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock42"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock41"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock43"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock42"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock44"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock43"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock45"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock44"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock46"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock45"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock47"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock46"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock48"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock47"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock49"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock48"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/lock50"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toBottomOf="@+id/lock49"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="166dp"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:srcCompat="@drawable/doorknob" />
+
+    <TextView
+        android:id="@+id/vmain"
+        android:layout_width="67dp"
+        android:layout_height="15dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="321dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="315dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="309dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="303dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="297dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="290dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="284dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="278dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="272dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="266dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="260dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="254dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="248dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="242dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="236dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="229dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="223dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="217dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="211dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="205dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="199dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="193dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="187dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="181dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="175dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="169dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="162dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="156dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="144dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="138dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="132dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="126dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="120dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="114dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="108dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="101dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="95dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="89dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="83dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="77dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="71dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView51"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="65dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView52"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="59dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView53"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="53dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView54"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="47dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="41dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="34dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="28dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+    <ImageView
+        android:id="@+id/imageView58"
+        android:layout_width="1dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="22dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintLeft_toLeftOf="@+id/door"
+        app:layout_constraintRight_toRightOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unlocked2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
